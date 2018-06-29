@@ -115,7 +115,27 @@ def third_anagram?(word, list)
 end
 
 def fourth_anagram?(word, list)
+  
 end
 
-p third_anagram?("hefllo", "olleh")
+def fourth_anagram?(word, list)
+  word_hash = Hash.new(0)
+  list_hash = Hash.new(0)
+  
+  word.chars.each do |ltr|
+    word_hash[ltr] += 1
+  end
+  
+  list.chars.each do |ltr|
+    list_hash[ltr] += 1
+  end
+  
+  word_hash.each do |ltr, count|
+  end
+  
+  p word_hash
+  p list_hash
+  
+end
 
+fourth_anagram?("hello", "jlleh")
