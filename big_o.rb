@@ -134,3 +134,15 @@ def fourth_anagram?(word, list)
 end
 
 p fourth_anagram?("hello", "olleh")
+
+
+def bad_two_sum?(arr, target_sum)
+  arr.each_index do |i1|
+    arr.each_index do |i2|
+      return true if arr[i1] + arr[i2] == target_sum
+    end
+  end
+  false
+end
+
+p bad_two_sum?([1, 2, 3, 4], 25)
