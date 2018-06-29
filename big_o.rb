@@ -130,12 +130,7 @@ def fourth_anagram?(word, list)
     list_hash[ltr] += 1
   end
   
-  word_hash.each do |ltr, count|
-  end
-  
-  p word_hash
-  p list_hash
-  
+  word_hash == list_hash
 end
 
-fourth_anagram?("hello", "jlleh")
+p fourth_anagram?("hello", "olleh")
